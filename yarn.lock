@@ -2915,8 +2915,8 @@ react-deep-force-update@^1.0.0:
   resolved "https://registry.yarnpkg.com/react-deep-force-update/-/react-deep-force-update-1.0.1.tgz#f911b5be1d2a6fe387507dd6e9a767aa2924b4c7"
 
 react-devtools-core@^2.0.8:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-2.1.5.tgz#cc36c514d20418d698d5e4780aa744e6d11aaa9a"
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-2.1.7.tgz#7ec9521fcf846c345830125132596f22fdbaaee6"
   dependencies:
     shell-quote "^1.6.1"
     ws "^2.0.3"

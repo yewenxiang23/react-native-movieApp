@@ -11,7 +11,7 @@ class Featured extends React.Component {
   render(){
     return (
       <NavigatorIOS
-        style={styles.container}
+        style={{flex:1}}
         initialRoute={{
         title:'推荐电影',
         component:MovieList

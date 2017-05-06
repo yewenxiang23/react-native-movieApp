@@ -2,8 +2,6 @@ import React,{Component} from 'react';
 import {styles} from '../styles/Main';
 import USBoxList from './USBoxList';
 import {
-    Text,
-    View,
     NavigatorIOS,
 } from 'react-native';
 
@@ -11,7 +9,7 @@ class USBoxRouter extends React.Component {
   render(){
     return (
       <NavigatorIOS
-        style={styles.container}
+        style={{flex:1}}
         initialRoute={{
         title:'北美电影',
         component:USBoxList

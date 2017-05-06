@@ -10,6 +10,7 @@ import USBoxRouter from './app/components/USBoxRouter';
 import styles from './app/styles/Main';
 import {icons} from './app/Assets/Icons';
 import Featured from './app/components/Featured';
+import SearchRouter from './app/components/SearchRouter';
 import {
     AppRegistry,
     StyleSheet,
@@ -19,7 +20,6 @@ import {
     ListView,
     TabBarIOS
 } from 'react-native';
-
 const REQUST_URL = 'https://api.douban.com/v2/movie/top250'; //获取排行前25的电影数据
 
 export default class movieApp extends Component {
@@ -32,7 +32,7 @@ export default class movieApp extends Component {
     render() {
         return (
             <TabBarIOS barTintColor="#9c27b0" tintColor="#6036aa" unselectedItemTintColor="rgba(255,255,255,.8)">
-                <TabBarIOS.Item icon={{uri:icons.home,scale:7}} selectedIcon={{uri:icons.homeActive,scale:7}}  selected={this.state.selectedTab === 'featured'} title="国内电影" onPress={() => {
+                <TabBarIOS.Item icon={{uri:icons.home,scale:8}} selectedIcon={{uri:icons.homeActive,scale:8}}  selected={this.state.selectedTab === 'featured'} title="国内电影" onPress={() => {
                     this.setState({selectedTab: 'featured'})
                 }}>
                     <Featured/>
@@ -41,6 +41,11 @@ export default class movieApp extends Component {
                     this.setState({selectedTab: 'us_box'})
                 }}>
                     <USBoxRouter/>
+                </TabBarIOS.Item>
+                <TabBarIOS.Item icon={{uri:icons.search,scale:8}} title="搜索电影" selectedIcon={{uri:icons.searchActive,scale:8}} selected={this.state.selectedTab === 'search'} onPress={()=>{
+                  this.setState({selectedTab: 'search'})
+                }}>
+                    <SearchRouter/>
                 </TabBarIOS.Item>
             </TabBarIOS>
         );
