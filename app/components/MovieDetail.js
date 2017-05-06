@@ -4,7 +4,7 @@ import {
     View,
     Image,
     ListView,
-    ActivityIndicator,  //加载时的转动圆圈
+    ActivityIndicator,  //加载时的转动圆圈圈
     TouchableHighlight, //按下时，封装的视图的不透明度会降低(只支持一个子节点)
 } from 'react-native';
 import {styles} from '../styles/Main';
