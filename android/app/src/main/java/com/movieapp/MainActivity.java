@@ -1,6 +1,7 @@
 package com.movieapp;
 
 import com.facebook.react.ReactActivity;
+import com.cboy.rn.splashscreen.SplashScreenReactPackage;
 
 public class MainActivity extends ReactActivity {
 
